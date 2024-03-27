@@ -5,11 +5,27 @@
     font-family: 'Poppins',sans-serif;
 }
 
-body {
-    min-height: 100vh;
+.imgWall {
     background-image: url("IMG/Frutas.png");
     background-repeat: no-repeat;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100%;
     background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.imgResina {
+    max-height: 100vh;
+    max-width: 100%;
+    object-fit: cover;
+    background: url("IMG/Resina1.jpeg") no-repeat;
+    position: absolute;
+    z-index: 2;
 }
 
 #Resumo {
@@ -22,12 +38,14 @@ body {
     top: 160px;
     left: 150px;
     padding: 25px;
+    z-index: 100;
 }
 
 .resumo {
     position: relative;
     font-size: 50px;
     text-align: center;
+    z-index: 100;
 }
 
 #WhiteBox {
@@ -38,6 +56,8 @@ body {
     align-content: center;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+    z-index: 100;
 }
 
 h1 {
